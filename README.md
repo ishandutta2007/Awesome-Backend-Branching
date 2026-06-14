@@ -50,5 +50,11 @@ If you are using traditional, self-hosted databases (like standard Postgres, MyS
 ## 4. Backend Cloud & Mock Infrastructure Branching
 To branch cloud logic, heavy integrations, and third-party dependencies without running into environment limits:
 
+| Product | Pricing (Paid Tiers) | Free Tier Limits |
+| :--- | :--- | :--- |
+| **[LocalStack](https://localstack.cloud)** | $39/license/mo | **Hobby:** $0 for non-commercial use. Requires account. |
+| **[LaunchDarkly](https://launchdarkly.com)** | $12/conn/mo + MAU | **Developer:** $0. 1 project, 3 envs, 1k contexts. |
+| **[Harness](https://harness.io)** | Usage-based | **Free:** $0. 2,000 cloud credits/mo. |
+
 * **[LocalStack](https://localstack.cloud)**: Emulates a complete AWS cloud environment (S3, DynamoDB, Lambda) locally. This lets every individual engineer run an isolated, offline "cloud branch" right on their machine.
 * **[LaunchDarkly](https://launchdarkly.com) or [Harness](https://harness.io)**: Advanced feature flag platforms that decouple backend code deployment from actual runtime visibility. They enable you to merge code to the `main` branch while wrapping new endpoints in a flag, mimicking a dynamic branch in production.
