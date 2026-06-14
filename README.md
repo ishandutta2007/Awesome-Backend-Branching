@@ -20,6 +20,14 @@ These advanced systems treat the entire backend ecosystem—not just the databas
 ## 2. Database-Level Branching Tools (Copy-on-Write)
 These modern, cloud-native databases allow you to spin up an isolated database branch—containing both live production schemas and data—in seconds via a CLI or CI/CD pipelines without duplicating actual storage blocks.
 
+| Product | Pricing (Paid Tiers) | Free Tier Limits |
+| :--- | :--- | :--- |
+| **[Neon](https://neon.tech)** | **Launch:** $5/mo min | **Free:** 100 CU-hours/mo, 0.5 GB storage, 10 branches. *Scale-to-zero mandatory.* |
+| **[DoltHub](https://www.dolthub.com/)** | **Pro:** $5/mo (private) | **Free:** Unlimited public databases. Private DBs up to 100MB storage. |
+| **[PlanetScale](https://planetscale.com)** | **Dev:** $5/mo \| **Scaler:** $39/mo | **None.** Hobby tier discontinued April 2024. |
+| **[Xata](https://xata.io)** | **Standard:** $8/mo | **Free:** 15 GB storage, 250k records. *Does not pause projects.* |
+| **[Supabase](https://supabase.com)** | **Pro:** $25/mo | **Free:** 500 MB DB, 50k MAUs, 1 GB storage. *Pauses after 7 days inactivity.* |
+
 * **[Neon](https://neon.tech)**: A serverless open-source **PostgreSQL** platform built explicitly around Git-style workflows. Developers can instantly branch a Postgres database to safely run schema migrations or test APIs against real production records.
 * **[Dolt](https://github.com)**: Marketed literally as **"Git for Data"**. This is a SQL database built natively on a Git version control engine, letting you run commands like `dolt branch`, `dolt commit`, and `dolt merge` straight from your terminal.
 * **[PlanetScale](https://planetscale.com)**: A serverless **MySQL** platform utilizing Vitess that brings Git principles to databases. It allows developers to create isolated schema branches and use "Deploy Requests" (similar to Pull Requests) to safely merge changes without downtime.
