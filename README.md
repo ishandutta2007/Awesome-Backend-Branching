@@ -64,12 +64,12 @@ For teams that prefer self-hosting or require 100% open-source software without 
 
 | Product | GitHub Repo | License / Pricing | Key Capability |
 | :--- | :--- | :--- | :--- |
-| **[Dolt](https://github.com/dolthub/dolt)** | [dolthub/dolt](https://github.com/dolthub/dolt) | Apache-2.0 / $0 | SQL database with Git-like branch/merge. |
-| **[Database Lab](https://github.com/postgres-ai/database-lab-engine)** | [postgres-ai/dle](https://github.com/postgres-ai/database-lab-engine) | Apache-2.0 / $0 | Instant thin cloning for multi-TB Postgres DBs. |
-| **[PocketBase](https://pocketbase.io)** | [pocketbase/pocketbase](https://github.com/pocketbase/pocketbase) | MIT / $0 | Single-file Go backend with SQLite branching. |
-| **[OpenTofu](https://opentofu.org)** | [opentofu/opentofu](https://github.com/opentofu/opentofu) | MPL-2.0 / $0 | OSS Terraform fork for environment branching. |
-| **[Bytebase](https://github.com/bytebase/bytebase)** | [bytebase/bytebase](https://github.com/bytebase/bytebase) | Apache-2.0 / $0* | Database CI/CD with GitOps branching. |
-| **[LocalStack](https://github.com/localstack/localstack)** | [localstack/localstack](https://github.com/localstack/localstack) | Apache-2.0 / $0* | Local AWS cloud emulation for isolated testing. |
+| **[LocalStack](https://github.com/localstack/localstack)** [![Stars](https://img.shields.io/github/stars/localstack/localstack?style=social&color=white)](https://github.com/localstack/localstack/stargazers) | [localstack/localstack](https://github.com/localstack/localstack) | Apache-2.0 / $0* | Local AWS cloud emulation for isolated testing. |
+| **[PocketBase](https://pocketbase.io)** [![Stars](https://img.shields.io/github/stars/pocketbase/pocketbase?style=social&color=white)](https://github.com/pocketbase/pocketbase/stargazers) | [pocketbase/pocketbase](https://github.com/pocketbase/pocketbase) | MIT / $0 | Single-file Go backend with SQLite branching. |
+| **[OpenTofu](https://opentofu.org)** [![Stars](https://img.shields.io/github/stars/opentofu/opentofu?style=social&color=white)](https://github.com/opentofu/opentofu/stargazers) | [opentofu/opentofu](https://github.com/opentofu/opentofu) | MPL-2.0 / $0 | OSS Terraform fork for environment branching. |
+| **[Dolt](https://github.com/dolthub/dolt)** [![Stars](https://img.shields.io/github/stars/dolthub/dolt?style=social&color=white)](https://github.com/dolthub/dolt/stargazers) | [dolthub/dolt](https://github.com/dolthub/dolt) | Apache-2.0 / $0 | SQL database with Git-like branch/merge. |
+| **[Bytebase](https://github.com/bytebase/bytebase)** [![Stars](https://img.shields.io/github/stars/bytebase/bytebase?style=social&color=white)](https://github.com/bytebase/bytebase/stargazers) | [bytebase/bytebase](https://github.com/bytebase/bytebase) | Apache-2.0 / $0* | Database CI/CD with GitOps branching. |
+| **[Database Lab](https://github.com/postgres-ai/database-lab-engine)** [![Stars](https://img.shields.io/github/stars/postgres-ai/database-lab-engine?style=social&color=white)](https://github.com/postgres-ai/database-lab-engine/stargazers) | [postgres-ai/dle](https://github.com/postgres-ai/database-lab-engine) | Apache-2.0 / $0 | Instant thin cloning for multi-TB Postgres DBs. |
 
 *\* Note: Some tools offer "Community Editions" that are free for self-hosting, while advanced features may require a Pro/Enterprise license.*
 
