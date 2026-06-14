@@ -37,6 +37,12 @@ These modern, cloud-native databases allow you to spin up an isolated database b
 ## 3. Database Schema Versioning Frameworks
 If you are using traditional, self-hosted databases (like standard Postgres, MySQL, or SQL Server) and want your schemas to follow your Git code branches precisely, these tools track changes as versioned source code:
 
+| Product | Pricing (Paid Tiers) | Free Tier Limits |
+| :--- | :--- | :--- |
+| **[Liquibase](https://liquibase.com)** | ~$5,000/year (Ent) | **Community:** Free OSS. Core change management for 30+ DBs. |
+| **[Flyway](https://flywaydb.org)** | ~$650/user/year | **Community:** Free. Supports 50+ DBs, basic migrations. |
+| **[Atlas Cloud](https://atlasgo.io)** | $9/seat/month | **Open:** $0. 1 project, 2 target DBs, 3 seats, 30-day retention. |
+
 * **[Liquibase](https://liquibase.com)**: An enterprise engine that tracks, versions, and deploys database schema changes. It integrates directly into your code repository to guarantee updates move through CI/CD alongside Git feature branches.
 * **[Flyway](https://flywaydb.org)**: A lightweight version-control tool for your database. Migrations are cataloged as plain SQL scripts or Java code and managed sequentially inside your Git feature branches.
 * **[Atlas](https://atlasgo.io)**: An open-source engine for managing schemas using a declarative approach (conceptually similar to "Terraform for databases"), making it a natural fit for GitOps backend pipelines.
