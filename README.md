@@ -8,6 +8,12 @@ The primary tools enabling this capability across different backend layers inclu
 ## 1. Complete Environment Branching Tools
 These advanced systems treat the entire backend ecosystem—not just the database—as a branchable asset. They are ideal for modern microservices and rapid preview deployments.
 
+| Product | Pricing (Paid Tiers) | Free Tier Limits |
+| :--- | :--- | :--- |
+| **[InsForge](https://insforge.dev/)** | **Pro:** ~$25/mo | **Free:** 2 instances, 500MB DB, 5GB bandwidth. *Pauses after 1 week inactivity.* |
+| **[Nitric](https://nitric.io)** | **Open Source:** $0 | **Framework is free.** Pay cloud providers (AWS/GCP/Azure) only for resource usage. |
+| **[Encore](https://encore.dev)** | **Pro:** $49/member/mo + usage | **Free:** 2 dev envs, 1M tracing events, 1 concurrent build, 7-day retention. |
+
 * **[InsForge Backend Branching](https://insforge.dev/)**: An open-source, AI-native cloud infrastructure platform that clones the **entire backend environment** in an instant. With a single action, you can spin up isolated, full copies of your PostgreSQL database, authentication rules, storage buckets, and edge functions. This allows safe feature testing, debugging, and experimentation without affecting production data.
 * **[Nitric](https://nitric.io) or [Encore](https://encore.dev)**: Infrastructure-as-code frameworks that dynamically interpret backend needs and deploy completely isolated "ephemeral backends" or preview environments every time a new Git Pull Request is opened.
 
