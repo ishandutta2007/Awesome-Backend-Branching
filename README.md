@@ -58,3 +58,23 @@ To branch cloud logic, heavy integrations, and third-party dependencies without 
 
 * **[LocalStack](https://localstack.cloud)**: Emulates a complete AWS cloud environment (S3, DynamoDB, Lambda) locally. This lets every individual engineer run an isolated, offline "cloud branch" right on their machine.
 * **[LaunchDarkly](https://launchdarkly.com) or [Harness](https://harness.io)**: Advanced feature flag platforms that decouple backend code deployment from actual runtime visibility. They enable you to merge code to the `main` branch while wrapping new endpoints in a flag, mimicking a dynamic branch in production.
+
+## 5. Open-Source & Self-Hosted Alternatives
+For teams that prefer self-hosting or require 100% open-source software without SaaS dependencies.
+
+| Product | GitHub Repo | License / Pricing | Key Capability |
+| :--- | :--- | :--- | :--- |
+| **[Dolt](https://github.com/dolthub/dolt)** | [dolthub/dolt](https://github.com/dolthub/dolt) | Apache-2.0 / $0 | SQL database with Git-like branch/merge. |
+| **[Database Lab](https://github.com/postgres-ai/database-lab-engine)** | [postgres-ai/dle](https://github.com/postgres-ai/database-lab-engine) | Apache-2.0 / $0 | Instant thin cloning for multi-TB Postgres DBs. |
+| **[PocketBase](https://pocketbase.io)** | [pocketbase/pocketbase](https://github.com/pocketbase/pocketbase) | MIT / $0 | Single-file Go backend with SQLite branching. |
+| **[OpenTofu](https://opentofu.org)** | [opentofu/opentofu](https://github.com/opentofu/opentofu) | MPL-2.0 / $0 | OSS Terraform fork for environment branching. |
+| **[Bytebase](https://github.com/bytebase/bytebase)** | [bytebase/bytebase](https://github.com/bytebase/bytebase) | Apache-2.0 / $0* | Database CI/CD with GitOps branching. |
+| **[LocalStack](https://github.com/localstack/localstack)** | [localstack/localstack](https://github.com/localstack/localstack) | Apache-2.0 / $0* | Local AWS cloud emulation for isolated testing. |
+
+*\* Note: Some tools offer "Community Editions" that are free for self-hosting, while advanced features may require a Pro/Enterprise license.*
+
+* **[Dolt](https://github.com/dolthub/dolt)**: The only SQL database that truly implements the Git versioning model (commit, branch, merge) at the storage engine level.
+* **[Database Lab Engine](https://github.com/postgres-ai/database-lab-engine)**: Uses ZFS/LVM clones to allow developers to create full-size Postgres clones in seconds, regardless of database size.
+* **[PocketBase](https://github.com/pocketbase/pocketbase)**: A compact, open-source backend consisting of a single file. Highly portable for developers who want to "branch" their entire backend by simply copying a folder.
+* **[Bytebase](https://github.com/bytebase/bytebase)**: An open-source database DevOps tool that treats database changes as code, allowing you to manage schema branches across different environments (Dev, Staging, Prod).
+
