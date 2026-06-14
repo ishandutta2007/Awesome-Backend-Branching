@@ -8,11 +8,11 @@ The primary tools enabling this capability across different backend layers inclu
 ## 1. Complete Environment Branching Tools
 These advanced systems treat the entire backend ecosystem—not just the database—as a branchable asset. They are ideal for modern microservices and rapid preview deployments.
 
-| Product | Pricing (Paid Tiers) | Free Tier Limits |
-| :--- | :--- | :--- |
-| **[InsForge](https://insforge.dev/)** | **Pro:** ~$25/mo | **Free:** 2 instances, 500MB DB, 5GB bandwidth. *Pauses after 1 week inactivity.* |
-| **[Nitric](https://nitric.io)** | **Open Source:** $0 | **Framework is free.** Pay cloud providers (AWS/GCP/Azure) only for resource usage. |
-| **[Encore](https://encore.dev)** | **Pro:** $49/member/mo + usage | **Free:** 2 dev envs, 1M tracing events, 1 concurrent build, 7-day retention. |
+| Product | Company Size (Valuation) | Pricing (Paid Tiers) | Free Tier Limits |
+| :--- | :--- | :--- | :--- |
+| **[Encore](https://encore.dev)** | ~$25M | **Pro:** $49/member/mo + usage | **Free:** 2 dev envs, 1M tracing events, 1 concurrent build, 7-day retention. |
+| **[Nitric](https://nitric.io)** | ~$20M | **Open Source:** $0 | **Framework is free.** Pay cloud providers (AWS/GCP/Azure) only for resource usage. |
+| **[InsForge](https://insforge.dev/)** | ~$15M | **Pro:** ~$25/mo | **Free:** 2 instances, 500MB DB, 5GB bandwidth. *Pauses after 1 week inactivity.* |
 
 * **[InsForge Backend Branching](https://insforge.dev/)**: An open-source, AI-native cloud infrastructure platform that clones the **entire backend environment** in an instant. With a single action, you can spin up isolated, full copies of your PostgreSQL database, authentication rules, storage buckets, and edge functions. This allows safe feature testing, debugging, and experimentation without affecting production data.
 * **[Nitric](https://nitric.io) or [Encore](https://encore.dev)**: Infrastructure-as-code frameworks that dynamically interpret backend needs and deploy completely isolated "ephemeral backends" or preview environments every time a new Git Pull Request is opened.
@@ -20,13 +20,13 @@ These advanced systems treat the entire backend ecosystem—not just the databas
 ## 2. Database-Level Branching Tools (Copy-on-Write)
 These modern, cloud-native databases allow you to spin up an isolated database branch—containing both live production schemas and data—in seconds via a CLI or CI/CD pipelines without duplicating actual storage blocks.
 
-| Product | Pricing (Paid Tiers) | Free Tier Limits |
-| :--- | :--- | :--- |
-| **[Neon](https://neon.tech)** | **Launch:** $5/mo min | **Free:** 100 CU-hours/mo, 0.5 GB storage, 10 branches. *Scale-to-zero mandatory.* |
-| **[DoltHub](https://www.dolthub.com/)** | **Pro:** $5/mo (private) | **Free:** Unlimited public databases. Private DBs up to 100MB storage. |
-| **[PlanetScale](https://planetscale.com)** | **Dev:** $5/mo \| **Scaler:** $39/mo | **None.** Hobby tier discontinued April 2024. |
-| **[Xata](https://xata.io)** | **Standard:** $8/mo | **Free:** 15 GB storage, 250k records. *Does not pause projects.* |
-| **[Supabase](https://supabase.com)** | **Pro:** $25/mo | **Free:** 500 MB DB, 50k MAUs, 1 GB storage. *Pauses after 7 days inactivity.* |
+| Product | Company Size (Valuation) | Pricing (Paid Tiers) | Free Tier Limits |
+| :--- | :--- | :--- | :--- |
+| **[Supabase](https://supabase.com)** | ~$10.5B | **Pro:** $25/mo | **Free:** 500 MB DB, 50k MAUs, 1 GB storage. *Pauses after 7 days inactivity.* |
+| **[Neon](https://neon.tech)** | ~$1.0B | **Launch:** $5/mo min | **Free:** 100 CU-hours/mo, 0.5 GB storage, 10 branches. *Scale-to-zero mandatory.* |
+| **[Xata](https://xata.io)** | ~$160M | **Standard:** $8/mo | **Free:** 15 GB storage, 250k records. *Does not pause projects.* |
+| **[PlanetScale](https://planetscale.com)** | ~$150M | **Dev:** $5/mo \| **Scaler:** $39/mo | **None.** Hobby tier discontinued April 2024. |
+| **[DoltHub](https://www.dolthub.com/)** | ~$60M | **Pro:** $5/mo (private) | **Free:** Unlimited public databases. Private DBs up to 100MB storage. |
 
 * **[Neon](https://neon.tech)**: A serverless open-source **PostgreSQL** platform built explicitly around Git-style workflows. Developers can instantly branch a Postgres database to safely run schema migrations or test APIs against real production records.
 * **[Dolt](https://github.com)**: Marketed literally as **"Git for Data"**. This is a SQL database built natively on a Git version control engine, letting you run commands like `dolt branch`, `dolt commit`, and `dolt merge` straight from your terminal.
@@ -37,11 +37,11 @@ These modern, cloud-native databases allow you to spin up an isolated database b
 ## 3. Database Schema Versioning Frameworks
 If you are using traditional, self-hosted databases (like standard Postgres, MySQL, or SQL Server) and want your schemas to follow your Git code branches precisely, these tools track changes as versioned source code:
 
-| Product | Pricing (Paid Tiers) | Free Tier Limits |
-| :--- | :--- | :--- |
-| **[Liquibase](https://liquibase.com)** | ~$5,000/year (Ent) | **Community:** Free OSS. Core change management for 30+ DBs. |
-| **[Flyway](https://flywaydb.org)** | ~$650/user/year | **Community:** Free. Supports 50+ DBs, basic migrations. |
-| **[Atlas Cloud](https://atlasgo.io)** | $9/seat/month | **Open:** $0. 1 project, 2 target DBs, 3 seats, 30-day retention. |
+| Product | Company Size (Valuation) | Pricing (Paid Tiers) | Free Tier Limits |
+| :--- | :--- | :--- | :--- |
+| **[Flyway](https://flywaydb.org)** | ~$200M | ~$650/user/year | **Community:** Free. Supports 50+ DBs, basic migrations. |
+| **[Liquibase](https://liquibase.com)** | ~$150M | ~$5,000/year (Ent) | **Community:** Free OSS. Core change management for 30+ DBs. |
+| **[Atlas Cloud](https://atlasgo.io)** | ~$80M | $9/seat/month | **Open:** $0. 1 project, 2 target DBs, 3 seats, 30-day retention. |
 
 * **[Liquibase](https://liquibase.com)**: An enterprise engine that tracks, versions, and deploys database schema changes. It integrates directly into your code repository to guarantee updates move through CI/CD alongside Git feature branches.
 * **[Flyway](https://flywaydb.org)**: A lightweight version-control tool for your database. Migrations are cataloged as plain SQL scripts or Java code and managed sequentially inside your Git feature branches.
@@ -50,11 +50,11 @@ If you are using traditional, self-hosted databases (like standard Postgres, MyS
 ## 4. Backend Cloud & Mock Infrastructure Branching
 To branch cloud logic, heavy integrations, and third-party dependencies without running into environment limits:
 
-| Product | Pricing (Paid Tiers) | Free Tier Limits |
-| :--- | :--- | :--- |
-| **[LocalStack](https://localstack.cloud)** | $39/license/mo | **Hobby:** $0 for non-commercial use. Requires account. |
-| **[LaunchDarkly](https://launchdarkly.com)** | $12/conn/mo + MAU | **Developer:** $0. 1 project, 3 envs, 1k contexts. |
-| **[Harness](https://harness.io)** | Usage-based | **Free:** $0. 2,000 cloud credits/mo. |
+| Product | Company Size (Valuation) | Pricing (Paid Tiers) | Free Tier Limits |
+| :--- | :--- | :--- | :--- |
+| **[Harness](https://harness.io)** | ~$5.5B | Usage-based | **Free:** $0. 2,000 cloud credits/mo. |
+| **[LaunchDarkly](https://launchdarkly.com)** | ~$3.0B | $12/conn/mo + MAU | **Developer:** $0. 1 project, 3 envs, 1k contexts. |
+| **[LocalStack](https://localstack.cloud)** | ~$120M | $39/license/mo | **Hobby:** $0 for non-commercial use. Requires account. |
 
 * **[LocalStack](https://localstack.cloud)**: Emulates a complete AWS cloud environment (S3, DynamoDB, Lambda) locally. This lets every individual engineer run an isolated, offline "cloud branch" right on their machine.
 * **[LaunchDarkly](https://launchdarkly.com) or [Harness](https://harness.io)**: Advanced feature flag platforms that decouple backend code deployment from actual runtime visibility. They enable you to merge code to the `main` branch while wrapping new endpoints in a flag, mimicking a dynamic branch in production.
